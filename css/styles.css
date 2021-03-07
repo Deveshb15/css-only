@@ -17,8 +17,58 @@ body{
     align-items: center;
 }
 
-.navbar ul{
+.nav-ul{
     color: #000;
     list-style-type: none;
+    display: flex;
 }
+
+.nav-li{
+    padding: 0.2rem 1rem;
+}
+
+.nav-li:nth-last-child(1){
+    padding-right: 2.5rem;
+}
+
+.nav-li a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.nav-li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.nav-li{
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.nav-left{
+    padding: 0.2rem 1.2rem;
+    font-size: 2rem;
+    font-weight: 750;
+}
+
+img{
+    width: 40rem;
+    height: auto;
+}
+
 
