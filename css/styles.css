@@ -72,7 +72,7 @@ body{
 }
 
 .main-section{
-    margin: 6.25rem auto;
+    margin: 4rem auto;
 }
 
 .main-section .container{
@@ -102,14 +102,19 @@ body{
 }
 
 .main-section .container .left-main button{
-    margin-top: 1rem;
+    margin-top: 1.3rem;
     font-weight: 500;
-    font-size: 1rem;
-    padding: 0.75rem;
+    font-size: 1.1rem;
+    padding: 1rem;
     border-radius: 1.5rem;
     border: none;
     color: #fff;
     background-color: #000;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-section .container .left-main button:focus{
+    outline: none;
 }
 
 .main-section .container .left-main button:hover{
@@ -149,6 +154,88 @@ body{
     font-weight: 400;
 }
 
+
+.contact-section{
+    width: 34.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+    color: #fff;
+    background: #000;
+    border-radius: 2rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contact-section h2{
+    font-size: 2rem;
+}
+
+.contact-section form{
+    display: flex;
+    flex-direction: column;
+    /* margin: 2rem; */
+}
+
+.contact-section form label{
+    padding: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.contact-section form input{
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    background-color: rgb(250, 246, 246);
+}
+
+.contact-section form input:focus{
+    outline: none;
+}
+
+.contact-section form textarea{
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    background-color: rgb(250, 246, 246);
+}
+
+.contact-section form textarea:focus{
+    outline: none;
+}
+
+.contact-section form .input-sub{
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: 1.5rem;
+    border: none;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section form .input-sub:hover{
+    color: #000;
+    background-color: rgb(226, 223, 223);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.icons a{
+    text-decoration: none;
+    color: #000;
+}
 
 
 img{
@@ -208,6 +295,10 @@ img{
 
     .illu-2{
         padding: 2rem;
+    }
+
+    .contact-section{
+        width: 25rem;
     }
     
 }
