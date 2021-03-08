@@ -332,10 +332,15 @@ img{
     
 }
 
-@media(max-width: 350px){
-    .contact-section{
+@media(max-width: 360px){
 
+    img{
+        width: 18rem;
+        height: auto;
+    }
+
+    .contact-section{
         width: 20rem;
-        margin-left: 2.25rem ;
+        margin-left: 1.78rem ;
     }
 }
