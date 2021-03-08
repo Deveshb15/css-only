@@ -277,6 +277,9 @@ img{
 
 @media(max-width: 918px){
 
+    body{
+        margin: 0 auto;
+    }
 
     .navbar{   
         flex-direction: column;
@@ -291,6 +294,11 @@ img{
         align-items: center; 
     }
 
+    .main-section .container .left-main{
+        display: flex;
+        flex-direction: column;
+    }
+
     .main-section .container .illu-1{
         margin: 0;
     }
@@ -302,6 +310,12 @@ img{
     .about-section .container{
         flex-direction: column-reverse;
         align-items: center; 
+    }
+
+    .about-section .container .right-main{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
     }
 
     .about-section .container .illu-2{
@@ -318,3 +332,10 @@ img{
     
 }
 
+@media(max-width: 350px){
+    .contact-section{
+
+        width: 20rem;
+        margin-left: 2.25rem ;
+    }
+}
