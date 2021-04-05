@@ -277,6 +277,9 @@ img{
 
 @media(max-width: 918px){
 
+    body{
+        overflow-x: hidden;
+    }
 
     .navbar{   
         flex-direction: column;
@@ -304,6 +307,10 @@ img{
         align-items: center; 
     }
 
+    .about-section .container .right-main{
+        margin-right: 0;
+    }
+
     .about-section .container .illu-2{
         margin: 0;
     }
@@ -316,5 +323,8 @@ img{
         width: 25rem;
     }
     
+    .footer{
+        margin-bottom: 2rem;
+    }
 }
 
