@@ -278,6 +278,8 @@ img{
 @media(max-width: 918px){
 
     body{
+
+        overflow-x: hidden;
         margin: 0 auto;
     }
 
@@ -313,9 +315,9 @@ img{
     }
 
     .about-section .container .right-main{
+        margin-right: 0;
         display: flex;
         flex-direction: column;
-        margin: 0;
     }
 
     .about-section .container .illu-2{
@@ -331,6 +333,9 @@ img{
         padding: 2rem;
     }
     
+    .footer{
+        margin-bottom: 2rem;
+    }
 }
 
 @media(max-width: 360px){
