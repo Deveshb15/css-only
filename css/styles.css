@@ -121,6 +121,9 @@ body{
     color: #000;
 }
 
+.main-section .container .left-main button:active{
+    transform: scale(0.98);
+}
 
 .about-section{
     margin: 6.25rem auto;
