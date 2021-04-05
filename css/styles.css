@@ -338,6 +338,11 @@ img{
     }
 }
 
+@media(max-width: 460px){
+    body{
+        overflow-x: hidden;
+    }
+}
 @media(max-width: 360px){
 
     img{
