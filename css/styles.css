@@ -39,13 +39,12 @@ body{
 }
 
 .nav-li a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
     content: "";
     display: block;
     height: 2px;
-    left: 50%;
     position: absolute;
+    bottom: 0;
+    left: 50%;
     background: #000;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
@@ -214,14 +213,15 @@ body{
     padding: 0.75rem;
     border-radius: 1.5rem;
     border: none;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: #000;
+    border: 1.5px solid #fff;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contact-section form .input-sub:hover{
     color: #000;
-    background-color: rgb(226, 223, 223);
+    background-color: #fff;
 }
 
 footer{
@@ -277,6 +277,12 @@ img{
 
 @media(max-width: 918px){
 
+    body{
+
+        overflow-x: hidden;
+        margin: 0 auto;
+    }
+
     .navbar{   
         flex-direction: column;
     }
@@ -288,6 +294,11 @@ img{
     .main-section .container{
         flex-direction: column;
         align-items: center; 
+    }
+
+    .main-section .container .left-main{
+        display: flex;
+        flex-direction: column;
     }
 
     .main-section .container .illu-1{
@@ -305,6 +316,8 @@ img{
 
     .about-section .container .right-main{
         margin-right: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .about-section .container .illu-2{
@@ -317,6 +330,7 @@ img{
 
     .contact-section{
         width: 25rem;
+        padding: 2rem;
     }
     
     .footer{
@@ -327,5 +341,17 @@ img{
 @media(max-width: 460px){
     body{
         overflow-x: hidden;
+    }
+}
+@media(max-width: 360px){
+
+    img{
+        width: 18rem;
+        height: auto;
+    }
+
+    .contact-section{
+        width: 20rem;
+        margin-left: 1.78rem ;
     }
 }
